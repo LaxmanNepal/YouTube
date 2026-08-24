@@ -1,0 +1,39 @@
+{
+  "updated_at": "2026-08-25",
+  "update_type": "fresh_market_research",
+  "channel": "Laxman Nepal Official",
+  "handle": "@laxmannepalofficial",
+  "audiences": {
+    "nepali": {"market": "Nepal", "script_language": "Nepali"},
+    "us": {"market": "United States", "script_language": "Nepali"},
+    "global": {"market": "US + global", "script_language": "Nepali"}
+  },
+  "research_signals": [
+    {"signal": "AI remains the strongest Science & Technology YouTube category in August 2026", "implication": "Prioritize practical AI tools, workflows and comparisons rather than generic AI news."},
+    {"signal": "Smartphone and gadget coverage remains commercially strong", "implication": "Use launch-cycle explainers, comparisons, buying decisions and hands-on angles."},
+    {"signal": "AI agents are moving toward longer autonomous workflows", "implication": "Test practical 'AI agent that does X' tutorials and workflow demonstrations."},
+    {"signal": "Creator audiences are showing sensitivity to undisclosed AI sponsorships", "implication": "Use transparent sponsorship language and prioritize hands-on evidence over hype."},
+    {"signal": "US audiences show growing concern about AI and jobs", "implication": "US/global topics should include practical productivity, jobs, automation and limitations—not only hype."},
+    {"signal": "Nepal is actively exploring AI for local-language preservation and translation", "implication": "Nepal-specific AI, Nepali-language tools and local digital problems are differentiated opportunities."}
+  ],
+  "priority_topic_angles": [
+    {"audience":"Nepali","rank":1,"topic":"Practical AI tools Nepali creators can use today","seo_target":"AI tools Nepal / free AI tools Nepali"},
+    {"audience":"Nepali","rank":2,"topic":"AI agents and automation for everyday work","seo_target":"AI agent Nepali / AI automation"},
+    {"audience":"Nepali","rank":3,"topic":"AI tools for students and Nepali-language learning","seo_target":"AI tools for students Nepal"},
+    {"audience":"Nepali","rank":4,"topic":"AI video generation tested with real examples","seo_target":"AI video generator Nepali"},
+    {"audience":"Nepali","rank":5,"topic":"Phone AI features explained practically","seo_target":"AI phone features Nepal"},
+    {"audience":"US","rank":1,"topic":"AI agents that actually complete useful tasks","seo_target":"best AI agents 2026"},
+    {"audience":"US","rank":2,"topic":"AI tools that save creators real production time","seo_target":"best AI tools for creators 2026"},
+    {"audience":"US","rank":3,"topic":"AI productivity vs traditional workflows","seo_target":"AI productivity tools"},
+    {"audience":"Global","rank":1,"topic":"What AI can actually automate in 2026","seo_target":"AI automation 2026"},
+    {"audience":"Global","rank":2,"topic":"Best AI video and creator workflows","seo_target":"AI video tools 2026"},
+    {"audience":"Global","rank":3,"topic":"AI jobs: what changes and what does not","seo_target":"AI jobs 2026"}
+  ],
+  "production_rule": "Every selected topic must receive a permanent dated topic page, SEO score /100, title package, description, tags, thumbnail prompt, Nepali long-form script, separate Nepali Shorts scripts, editing plan, audience target and research rationale. Old topic packages must be archived rather than deleted.",
+  "sources": [
+    {"title":"Trending Topics on YouTube in Science & Technology August 2026","url":"https://hype.ad/blog/trending-topics/science-and-tech/august-2026","finding":"AI ranked first and smartphone second in the cited August category analysis."},
+    {"title":"YouTube Tech News","url":"https://www.youtubetechnews.com/","finding":"Current technology coverage clusters strongly around AI models, AI agents, creator economy, phones, chips and software."},
+    {"title":"KU info lab digitises Nepal's indigenous languages","url":"https://kathmandupost.com/science-technology/2026/08/22/ku-info-lab-leads-efforts-to-digitise-and-preserve-nepal-s-indigenous-languages","finding":"AI and translation are being applied to Nepali and other local languages, creating a differentiated Nepal-specific technology angle."},
+    {"title":"The Verge — YouTube creators and AI sponsorship backlash","url":"https://www.theverge.com/ai-artificial-intelligence/983181/matti-haapoja-sam-kold-kolder-higgsfield-seedance-backlash","finding":"Transparency matters when creators promote AI products; hands-on evidence and clear sponsorship disclosure should be part of packaging strategy."}
+  ]
+}
