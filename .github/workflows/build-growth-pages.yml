@@ -25,3 +25,4 @@ jobs:
           git add topics archive
           git diff --cached --quiet || git commit -m 'Auto-build topic pages and permanent archive'
           git push
+      # Rebuild all generated topic pages from the canonical growth dataset.
