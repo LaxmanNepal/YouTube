@@ -2,6 +2,7 @@ name: Build Growth Pages and Archive
 on:
   push:
     paths:
+      - 'data/growth-data.json'
       - 'data/growth-update-*.json'
       - 'scripts/build_growth_pages.py'
   workflow_dispatch:
@@ -15,11 +16,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - run: python scripts/build_growth_pages.py
-      - name: Commit generated pages and archive
+      - name: Generate topic pages and archive
+        run: python scripts/build_growth_pages.py
+      - name: Commit generated pages
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add topics archive
-          git diff --cached --quiet || git commit -m 'Auto-build dated topic pages and growth archive'
+          git diff --cached --quiet || git commit -m 'Auto-build topic pages and permanent archive'
           git push
