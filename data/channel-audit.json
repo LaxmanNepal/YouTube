@@ -1,0 +1,32 @@
+{
+  "generated_at":"2026-08-25T00:00:00+03:00",
+  "channel":{"name":"Laxman Nepal Official","handle":"@laxmannepalofficial","channel_id":"UCFl4DYgZNA-XuFTTihh-l9w"},
+  "data_status":"public_snapshot_plus_audit_framework",
+  "public_snapshot":{"source":"SocialCounts public tracker; historical snapshot, not live private YouTube Analytics","date":"2026-08-02","subscribers":636,"views":42945,"videos":151,"daily_average_views":106,"weekly_subscriber_change":3,"last_29_days_subscriber_change":16,"last_29_days_view_change":3090},
+  "channel_positioning":{"stated_focus":["AI tools","mobile editing","Blogger tricks","online earning","smart digital tools","computer","telecom","education"],"primary_language":"Nepali","core_market":"Nepal","opportunity":"Practical Nepali-language technology education with stronger packaging and repeatable series"},
+  "audit_score":{"overall":"Pending first-party analytics","reason":"A defensible channel score needs impressions, CTR, watch time, retention, traffic sources and audience data; these are not available from public channel statistics alone."},
+  "sections":[
+    {"title":"Channel Foundation","status":"review","checks":["Positioning clarity","Banner promise","About section","Homepage structure","Playlists","Featured content","Brand consistency"]},
+    {"title":"Content Performance","status":"requires_oauth","metrics":["Views","Watch time","Average view duration","Average percentage viewed","Impressions","Impressions CTR","Likes","Comments","Subscribers gained","Returning viewers"]},
+    {"title":"Audience Intelligence","status":"requires_oauth","metrics":["Top countries","Age","Gender","New vs returning viewers","When viewers are on YouTube","What your audience watches","Formats your viewers watch"]},
+    {"title":"Discovery & Traffic","status":"requires_oauth","metrics":["YouTube Search","Browse features","Suggested videos","External","Channel pages","Playlists","Search terms"]},
+    {"title":"Winning Content Patterns","status":"ready_for_video_data","checks":["Topic clusters","Title patterns","Thumbnail patterns","Video length","Upload frequency","Long vs Shorts","Top winners","Underperformers"]},
+    {"title":"Video SEO","status":"audit","checks":["Primary keyword","Search intent","Title relevance","Description opening","Keyword coverage","Tags","Hashtags","Topic freshness","Thumbnail-title alignment"]},
+    {"title":"CTR & Packaging","status":"audit","checks":["One clear promise","Mobile readability","Curiosity gap","Specific outcome","Title-thumbnail complementarity","No redundant text"]},
+    {"title":"Growth Strategy","status":"audit","checks":["Content pillars","Series opportunities","Topic gaps","Audience-market fit","Nepal opportunities","US/global experiments","Shorts-to-long funnel"]}
+  ],
+  "diagnosis":[
+    "The channel has a practical technology foundation, but the stated topic range is broad; stronger content pillars should make the channel easier to understand and package.",
+    "The public snapshot shows 151 videos and about 42.9K total views as of 2026-08-02. That is a substantial back-catalog relative to the current audience size, so packaging and topic selection deserve priority.",
+    "The strongest strategic advantage is Nepali-language practical technology education. AI tools, creator workflows, mobile editing, productivity and Nepal-specific digital problems can become repeatable series.",
+    "Public data cannot establish CTR, retention, watch time or traffic-source performance. Those must not be fabricated; they require YouTube Analytics authorization."
+  ],
+  "action_plan":[
+    {"priority":1,"action":"Connect YouTube Analytics OAuth","why":"Unlock first-party performance and audience data."},
+    {"priority":2,"action":"Classify the full video library into topic clusters","why":"Identify subjects that actually produce views and subscribers."},
+    {"priority":3,"action":"Build winner-vs-underperformer analysis","why":"Find repeatable title, thumbnail, topic and duration patterns."},
+    {"priority":4,"action":"Create separate Nepal, US and Global opportunity pipelines","why":"Different markets require different research and packaging."},
+    {"priority":5,"action":"Publish fewer, stronger videos around proven clusters","why":"A broad library without repeatable winning formats does not automatically create audience growth."}
+  ],
+  "official_api_capabilities":{"channel_statistics":["subscriberCount","videoCount","viewCount","commentCount"],"analytics_dimensions":["date","country","video","traffic source","device","demographics"]}
+}
