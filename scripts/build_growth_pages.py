@@ -8,7 +8,13 @@ if not files:
     fallback=DATA/'growth-data.json'
     if not fallback.exists(): raise SystemExit('No growth dataset found')
     files=[fallback]
-latest=files[-1]; data=json.loads(latest.read_text(encoding='utf-8'))
+latest=files[-1]
+data=json.loads(latest.read_text(encoding='utf-8'))
+# The canonical dataset is always the latest published update. This makes the
+# dashboard and every audience page read exactly the same current snapshot.
+canonical=DATA/'growth-data.json'
+if latest.resolve()!=canonical.resolve():
+    canonical.write_text(latest.read_text(encoding='utf-8'),encoding='utf-8')
 
 def esc(v=''):
     return str(v or '').replace('&','&amp;').replace('<','&lt;').replace('>','&gt;').replace('"','&quot;')
@@ -41,10 +47,14 @@ def get_edit(t):
     if isinstance(e,dict): return ' · '.join(f'{k}: {v}' for k,v in e.items())
     return 'Result first · visual change every 2–5 seconds · screen recordings · cursor highlights · Nepali captions · before/after proof · pattern interrupts.'
 
+# Every dated update becomes a permanent archive snapshot. Never delete older snapshots.
 for f in files:
     target=ARCHIVE/f.name
     if not target.exists(): shutil.copy2(f,target)
 
+# Generate a permanent page for EVERY current topic on every update.
+# Existing pages are overwritten only when their topic slug is present in the current
+# dataset; old topic pages are intentionally retained so historical ideas never vanish.
 for t in data.get('topics',[]):
     long=get_long(t); shorts=get_shorts(t); thumb=t.get('thumbnail') or {}; seo=t.get('seo_score',t.get('score',0))
     audience=t.get('audience') or t.get('target') or 'Audience'; market=t.get('market') or 'Target market'
