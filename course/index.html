@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b0f">
+  <meta name="description" content="Laxman Nepal Official — YouTube Creator Course. Watch lessons, track progress and continue learning.">
+  <title>YouTube Creator Course — Laxman Nepal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient a"></div><div class="ambient b"></div>
+  <header class="topbar glass">
+    <a class="brand" href="../index.html"><span class="logo">LN</span><span><b>Laxman Nepal</b><small>YouTube Creator Course</small></span></a>
+    <div class="top-actions"><span id="progressText">0% complete</span><button id="themeBtn" aria-label="Toggle theme">◐</button></div>
+  </header>
+
+  <main>
+    <section class="hero glass">
+      <div>
+        <span class="eyebrow">YOUTUBE CREATOR COURSE</span>
+        <h1>Learn. Create.<br><em>Publish better.</em></h1>
+        <p>A distraction-free course player built around your lessons. Your video library is read automatically from the GitHub Videos repository, so newly pushed lessons appear without editing this page.</p>
+        <div class="hero-stats"><div><strong id="lessonCount">—</strong><span>Lessons</span></div><div><strong id="watchedCount">0</strong><span>Watched</span></div><div><strong id="percent">0%</strong><span>Progress</span></div></div>
+      </div>
+      <div class="continue-card" id="continueCard"><span class="eyebrow">CONTINUE LEARNING</span><strong id="continueTitle">Choose a lesson</strong><button id="continueBtn" disabled>Start learning →</button></div>
+    </section>
+
+    <section class="layout">
+      <aside class="sidebar glass">
+        <div class="section-title"><div><span class="eyebrow">COURSE CONTENT</span><h2>Lessons</h2></div><span class="count" id="sidebarCount">—</span></div>
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search lessons…"></label>
+        <div id="lessonList" class="lesson-list"><div class="loading">Loading lessons…</div></div>
+      </aside>
+
+      <section class="player-area">
+        <div class="player glass" id="playerCard">
+          <div class="player-empty" id="emptyPlayer"><div class="play-icon">▶</div><h2>Select a lesson</h2><p>Your lesson will play here.</p></div>
+          <video id="video" controls playsinline preload="metadata" hidden></video>
+        </div>
+        <div class="lesson-info glass" id="lessonInfo" hidden>
+          <div><span class="eyebrow" id="lessonNumber">LESSON</span><h2 id="lessonTitle">—</h2><p id="lessonPath">—</p></div>
+          <div class="info-actions"><button class="secondary" id="prevBtn">← Previous</button><button class="primary" id="nextBtn">Next lesson →</button></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="about glass">
+      <span class="eyebrow">HOW IT WORKS</span><h2>Always synced with your video repository.</h2><p>The app reads <code>course/youtube</code> from <b>LaxmanNepal/Videos</b> through GitHub's public API and builds the lesson list automatically. Videos are streamed through Git LFS media URLs; the website itself contains no 11 GB video files.</p>
+      <button id="refreshBtn" class="secondary">↻ Refresh lessons</button><span id="status" class="status">Ready</span>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> Laxman Nepal · YouTube Creator Course</footer>
+  <script src="app.js"></script>
+</body>
+</html>
